@@ -5,24 +5,65 @@ body {
 }
 
 .header {
-  height: 72px;
+  height: 40px;
   background: darkmagenta;
   color: white;
+  font-weight: 900; 
+  font-size: 33px; 
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;  
+  position: relative; 
 }
 
 .sidebar {
+  display: flex; 
   width: 300px;
   background: royalblue;
+  flex-shrink: 0; 
+  padding: 16px; 
+  
 }
+
+ul {
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+ }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
 }
+
+.cards { 
+  padding: 32px;
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.body { 
+  flex: 1;
+  display: flex; 
+}
+
+li { 
+margin-bottom: 16px; 
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+} 
+
